@@ -40,8 +40,8 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: api-test-reports
-          path:
-            target/surefire-reports/
-            target/site/surefire-report.html
-
-          if-no-files-found: warn
+          path: |
+            target/surefire-reports/*.xml
+            target/surefire-reports/*.txt
+            target/reports/surefire.html
+          if-no-files-found: error
