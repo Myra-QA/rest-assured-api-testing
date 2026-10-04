@@ -27,6 +27,14 @@ jobs:
         if: always()
         run: mvn -B surefire-report:report
 
+      - name: Inspect generated files
+        if: always()
+        run: |
+            echo "Current directory:"
+            pwd
+            echo "Generated files:"
+            find target -type f -print || true  
+
       - name: Upload test reports
         if: always()
         uses: actions/upload-artifact@v6
