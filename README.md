@@ -1,5 +1,7 @@
 # REST Assured API Testing
 
+[![Java API Tests](https://github.com/Myra-QA/rest-assured-api-testing/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/Myra-QA/rest-assured-api-testing/actions/workflows/maven.yml)
+
 A Java API automation project using REST Assured, JUnit 5, and Maven, with [DummyJSON](https://dummyjson.com/) as the practice API.
 
 ## Tech Stack
